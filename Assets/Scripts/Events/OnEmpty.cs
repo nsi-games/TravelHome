@@ -1,19 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 using UnityEngine.Events;
 
 public class OnEmpty : MonoBehaviour
 {
     public UnityEvent onEmpty;
-
+    
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount == 0)
+        // Check if there are no more children left
+        if(transform.childCount == 0)
         {
+            // Run the subscribed events
             onEmpty.Invoke();
-            gameObject.SetActive(false);
+            // Disable the script
+            enabled = false; // ... So update doesn't get called again... LOL
         }
     }
 }
