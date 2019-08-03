@@ -8,6 +8,7 @@ ModelImporter:
     400000: Icosphere
     400002: //RootNode
     2100000: ProBuilderDefault
+    2100002: IcosphereMat
     2300000: Icosphere
     3300000: Icosphere
     4300000: Icosphere

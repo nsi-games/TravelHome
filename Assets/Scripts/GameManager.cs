@@ -14,4 +14,12 @@ public class GameManager : MonoBehaviour
         // Load the next scene after current scene
         SceneManager.LoadScene(currentScene.buildIndex + 1);
     }
+
+    public void Restart()
+    {
+        // Get the current scene
+        Scene currentScene = SceneManager.GetActiveScene();
+        // Load the next scene after current scene
+        SceneManager.LoadScene(currentScene.buildIndex);
+    }
 }
