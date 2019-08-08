@@ -287,6 +287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23392f0c27f16b49bb965b36179cccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDistance: 1
+  path: {fileID: 0}
 --- !u!195 &472844924
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1239,6 +1241,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485997985, guid: ca18231c74e26ce4abf7801c314c6a07, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca18231c74e26ce4abf7801c314c6a07, type: 3}
